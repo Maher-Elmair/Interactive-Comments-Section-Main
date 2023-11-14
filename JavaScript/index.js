@@ -4,16 +4,16 @@ function themeToggle() {
     const theme = dataTheme.attributes[0].value
     console.log(theme)
     if (theme === "dark") {
-      dataTheme.attributes[0].value = "light"
+        dataTheme.attributes[0].value = "light"
     }
     if (theme === "light") {
-      dataTheme.attributes[0].value = "dark"
+        dataTheme.attributes[0].value = "dark"
     }
-  }
-  
-  document.getElementById("theme-toggle").addEventListener('click', () => {
+}
+
+document.getElementById("theme-toggle").addEventListener('click', () => {
     themeToggle()
-  })
+})
 
 /*=====================================================================*/
 
@@ -127,7 +127,7 @@ replaceBtns();
 
 /*=====================================================================*/
 
-    /*==== reply comment  ====*/
+/*==== reply comment  ====*/
 function reply() {
     let commentContainer = document.querySelectorAll(".comment-container")
 
@@ -210,13 +210,13 @@ reply();
 
 /*=====================================================================*/
 
-let container = document.querySelector(".container");
+let container = document.getElementById("container");
 let addComment = document.querySelector(".add-comment");
 
 let send = document.querySelector(".send");
 let commentInput = document.querySelector(".comment-input");
 
-    /*==== send comment  ====*/
+/*==== send comment  ====*/
 send.addEventListener("click", function () {
     // console.log(commentInput.value);
 
